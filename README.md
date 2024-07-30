@@ -1,5 +1,5 @@
 # Hyprland Dotfiles
-This is my [ Hyprland ](https://github.com/hyprwm/Hyprland.git) dot files which is customized for *simplicity*.
+This is my [ Hyprland ](https://github.com/hyprwm/Hyprland.git) dot files which is customized for *simplicity*, has smooth **animation**.
 
 
 - Hyprland
