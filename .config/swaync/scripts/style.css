@@ -1,0 +1,230 @@
+
+@import "/home/ankur/.config/swaync/themes/theme.css";
+* {
+    all: unset;
+    font-family: Ubuntu;
+    font-size: 20px;
+}
+
+.notification-row {
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+
+
+.notification {
+    border-radius: 20px;
+    margin: 2px 4px;
+    box-shadow: none;
+    padding: 0;
+    min-height: 40px;
+    min-width: 50px;
+}
+
+
+
+.low {
+  background: @back-alt;
+  padding: 0px;
+  border: none;
+}
+
+.normal {
+  background: @back-alt;
+  padding: 0px;
+  border: none;
+}
+
+.critical {
+  background: @red;
+  padding: 2px;
+  border: none;
+  border-radius: 0px;
+}
+
+
+.notification-content {
+    background: transparent;
+    padding-left: 1rem;
+}
+
+.close-button {
+    background: @red;
+    color: @back-alt;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 5%;
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+    box-shadow: none;
+    border: none;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+.close-button:hover {
+    box-shadow: none;
+    background: @blue;
+    color: @back-alt;
+    transition: all 0.15s ease-in-out;
+    border: none;
+}
+
+.notification-default-action,
+.notification-action {
+    padding: 4px;
+    margin: 0;
+    box-shadow: none;
+    background-color: @back-alt;
+    border: 2px solid @back;
+    color: @fore;
+    transition: all 0.15s ease-in-out;
+}
+
+
+.notification-default-action:hover,
+.notification-action:hover {
+    -gtk-icon-effect: none;
+    background: @back-alt;
+    border: 2px solid @gray;
+}
+
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.notification-action:last-child {
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid @gray;
+}
+
+.inline-reply {
+    margin-top: 5px;
+}
+.inline-reply-entry {
+    background: @back-alt;
+    color: @fore;
+    caret-color: @fore;
+    border: 2px solid @gray;
+    border-radius: 12px;
+}
+.inline-reply-button {
+    margin-left: 4px;
+    background: @back-alt;
+    border: 2px solid @gray;
+    border-radius: 12px;
+    color: @fore;
+}
+.inline-reply-button:disabled {
+    background: initial;
+    color: @gray;
+    border: 2px solid transparent;
+}
+.inline-reply-button:hover {
+    background: @back;
+}
+
+.image {
+  padding: 5px;
+  margin-left: 0px;
+}
+
+.body-image {
+    background-color: transparent;
+    border-radius: 12px;
+    margin-top: 2px;
+}
+
+.summary {
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    color: @blue;
+    text-shadow: none;
+    padding-top: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: bold;
+    background: transparent;
+    color: @fore-alt;
+    text-shadow: none;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+.body {
+    font-size: 14px;
+    font-weight: normal;
+    background: transparent;
+    color: @fore;
+    text-shadow: none;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.control-center {
+    background: @back-alt-t;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid @fore;
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+.control-center-list-placeholder {
+    opacity: 1;
+    color: @yellow;
+    margin: 0px;
+    padding: 0px;
+}
+
+.floating-notifications {
+    background: transparent;
+    margin: 2px
+}
+
+/* Window behind control center and on all other monitors */
+.blank-window {
+    background: alpha(@back, 0.2);
+}
+
+/*** Widgets ***/
+/* Title widget */
+@import "widgets/title.css";
+/* DND widget */
+@import "widgets/dnd.css";
+/* Label widget */
+@import "widgets/label.css";
+/* Mpris widget */
+@import "widgets/mpris.css";
+/* Buttons widget */
+@import "widgets/buttons.css";
+/* Menubar widget */
+@import "widgets/menubar.css";
+/* Volume widget */
+@import "widgets/volume.css";
+/* Backlight widget */
+@import "widgets/backlight.css";
+/* Inhibitors widget */
+@import "widgets/inhibitors.css";

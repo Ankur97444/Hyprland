@@ -1,0 +1,31 @@
+/*
+*
+* Kripton colorscheme
+*
+*/
+
+@define-color back #242933;
+@define-color back-alt #1e222a;
+@define-color fore #bbc3d4;
+
+@define-color color1 #bf616a;
+@define-color color2 #a3be8c;
+@define-color color3 #ebcb8b;
+@define-color color4 #8fbcbb;
+@define-color color5 #b48ead;
+@define-color color6 #5e81ac;
+@define-color color7 #d08770;
+@define-color color8 #3b4252;
+@define-color color9 #c5727a;
+@define-color color10 #b1c89d;
+@define-color color11 #efd49f;
+@define-color color12 #9fc6c5;
+@define-color color13 #be9db8;
+@define-color color14 #81a1c1;
+@define-color color15 #d79784;
+@define-color color16 #434c5e;
+
+
+/* transparent values */
+@define-color back-t rgba(36, 41, 51, 0.8);
+@define-color back-alt-t rgba(30, 24, 42, 0.8);

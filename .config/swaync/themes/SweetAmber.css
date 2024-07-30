@@ -1,0 +1,31 @@
+/*
+*
+*  ArcDark Theme
+*
+*/
+
+
+@define-color back #1b1c21;
+@define-color back-alt #020202;
+
+@define-color fore #f4f5f6;
+@define-color fore-alt #c9cacb;
+
+@define-color red #e6133e;
+@define-color main #03e9b1;
+@define-color yellow #f9dc5c;
+@define-color main-dark #338eff;
+@define-color gray #3e3e40;
+
+
+
+@define-color back-t rgba(27, 28, 33, 0.8);
+@define-color back-alt-t rgba(2, 2, 2, 0.8);
+@define-color red-t rgba(230, 19, 62, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

@@ -1,0 +1,29 @@
+/*
+*
+*  Kripton Theme
+*
+*/
+
+
+@define-color back #242933;
+@define-color back-alt #1e222a;
+
+@define-color fore #bbc3d4;
+@define-color fore-alt #a3be8c;
+
+@define-color red #bf616a;
+@define-color main #8fbcbb;
+@define-color yellow #ebcb8b;
+@define-color main-dark #5e81ac;
+@define-color gray #434c5e;
+
+@define-color back-t rgba(36, 41, 51, 0.8);
+@define-color back-alt-t rgba(30, 34, 42, 0.6);
+@define-color red-t rgba(237, 83, 83, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

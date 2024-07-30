@@ -1,0 +1,30 @@
+/*
+*
+* Catppuccin Mocha Theme
+*
+*/
+
+@define-color back #1e1e2e;
+@define-color back-alt #11111b;
+
+@define-color fore #cdd6f4;
+@define-color fore-alt #cba6f7;
+
+@define-color red #f77b72;
+@define-color main #7aa2f7;
+@define-color yellow #f9e2af;
+@define-color main-dark #89dceb;
+@define-color gray #45475a;
+
+
+
+@define-color back-t rgba(30, 30, 46, 0.6);
+@define-color back-alt-t rgba(17, 17, 27, 0.5);
+@define-color red-t rgba(243, 139, 168, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

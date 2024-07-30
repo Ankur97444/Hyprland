@@ -1,0 +1,101 @@
+@import "/home/ankur/.config/wofi/themes/theme.css";
+
+* {
+  all: unset;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#window {
+  opacity: 1;
+  background: transparent;
+	margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "ComicShannsMono Nerd Font";
+  font-size: 18px;
+  color: @fore;
+}
+
+#input {
+  padding: 12px;
+	background-color: @back-alt;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  border: 2px solid @fore;
+  font-weight: italic;
+  color: @fore;
+}
+
+#input:selected {
+  border: none;
+}
+
+#img {
+  margin-right: 6px;
+}
+
+#input image {
+	color: @highlight;
+  margin-left: 6px;
+  padding-right: 10px;
+}
+
+
+#inner-box {
+  background: transparent;
+  margin: 0px;
+}
+
+#outer-box {
+  margin: 5px;
+	padding: 10px;
+  background-color: @back-trans;
+  border-radius: 20px;
+}
+
+#text {
+	background-color: @back-alt;
+	margin: 5px;
+	font-weight: normal;
+}
+
+/* selected text */
+#text:selected {
+	background-color: @selected;
+	margin: 5px;
+	border-radius: 0px;
+	color: @back-alt;
+	font-weight: bold;
+}
+
+
+#entry:selected {
+	background-color: @selected;
+	color: @back-alt;
+	font-weight: 900;
+  border-radius: 20px;
+}
+
+
+#entry image {
+  margin-left: 10px;
+  max-height: 32;
+  max-width: 32;
+}
+
+#entry {
+  background-color: @back;
+  font-weight: normal;
+  padding: 6px;
+  margin: 4px;
+  border-radius: 20px;
+  background-color: @back-alt;
+}
+
+
+/* selected icon color */
+#entry image:selected {
+	background-color: @selected;
+}

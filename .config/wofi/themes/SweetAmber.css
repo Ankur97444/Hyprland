@@ -1,0 +1,18 @@
+/*
+*
+* ArcDark Theme
+*
+*/
+
+
+@define-color back #1b1c21;
+@define-color back-alt #020202;
+@define-color fore #f4f5f6;
+
+@define-color selected #338eff;
+@define-color dark #3e3e40;
+@define-color highlight #e6133e;
+
+
+/* TRansparent element */
+@define-color back-trans rgba(27, 28, 33, 0.7);

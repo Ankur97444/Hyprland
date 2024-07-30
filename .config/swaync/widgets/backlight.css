@@ -1,0 +1,14 @@
+@import "/home/ankur/.config/swaync/themes/theme.css";
+
+/* Backlight widget */
+.widget-backlight {
+    background-color: @back-alt;
+    margin: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 12px;
+    border: 2px solid @gray;
+    color: @fore-alt;
+    font-size: 22px;
+}
+

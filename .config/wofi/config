@@ -1,0 +1,15 @@
+show=drun
+width=600
+height=430
+columns=1
+always_parse_args=true
+show_all=true
+print_command=true
+layer=top
+insensitive=true
+prompt=Apps...
+hide_scroll=false
+location=0
+normal_window=false
+term="kitty -e"
+allow_images=true

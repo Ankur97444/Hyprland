@@ -1,0 +1,31 @@
+/*
+*
+*  Arc Theme
+*
+*/
+
+
+@define-color back #343434;
+@define-color back-alt #272727;
+
+@define-color fore #fbfbfb;
+@define-color fore-alt #e920a3;
+
+@define-color red #e92020;
+@define-color main #e95420;
+@define-color yellow #208fe9;
+@define-color main-dark #a6401c;
+@define-color gray #4d4d4d;
+
+
+
+@define-color back-t rgba(52, 52, 52, 0.8);
+@define-color back-alt-t rgba(39, 39, 39, 0.8);
+@define-color red-t rgba(242, 32, 31, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

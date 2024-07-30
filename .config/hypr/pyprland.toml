@@ -1,0 +1,36 @@
+[pyprland]
+plugins = [
+  "scratchpads"
+#  "expose",
+#  "fetch_client_menu"
+]
+
+# kitty
+# [scratchpads.term]
+# animation = "fromTop"
+# command = "kitty --class kitty-dropterm"
+# class = "kitty-dropterm"
+# lazy = true
+# size = "60% 60%"
+
+# foot
+[scratchpads.term]
+animation = "fromTop"
+command = "foot --app-id foot-dropterm"
+class = "foot-dropterm"
+lazy = true
+size = "60% 60%"
+
+
+#[scratchpads.volume]
+#animation = "fromRight"
+#command = "pavucontrol"
+#class = "pavucontrol"
+#lazy = true
+#size = "40% 90%"
+#unfocus = "hide"
+
+#[expose]
+#include_special = false
+#lazy = true
+

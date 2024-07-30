@@ -1,0 +1,18 @@
+/*
+*
+* Kripton theme
+*
+*/
+
+
+@define-color back #242933;
+@define-color back-alt #1e222a;
+@define-color fore #bbc3d4;
+
+@define-color selected #8fbcbb;
+@define-color dark #434c5e;
+@define-color highlight #bf616a;
+
+
+/* Transparent Element */
+@define-color back-trans rgba(36, 41, 51, 0.7);

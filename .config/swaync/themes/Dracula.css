@@ -1,0 +1,31 @@
+/*
+*
+*  Dracula Theme
+*
+*/
+
+
+@define-color back #282a36;
+@define-color back-alt #21222c;
+
+@define-color fore #f8f8f2;
+@define-color fore-alt #ff79c6;
+
+@define-color red #ff5555;
+@define-color main #bd93f9;
+@define-color yellow #f1fa8c;
+@define-color main-dark #50fa7b;
+@define-color gray #44475a;
+
+
+
+@define-color back-t rgba(40, 42, 44, 0.6);
+@define-color back-alt-t rgba(33, 34, 34, 0.4);
+@define-color red-t rgba(255, 85, 85, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

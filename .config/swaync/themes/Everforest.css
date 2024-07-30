@@ -1,0 +1,29 @@
+/*
+*
+*  Everforest Hard Theme
+*
+*/
+
+
+@define-color back #272e33;
+@define-color back-alt #1e2326;
+
+@define-color fore #d3c6aa;
+@define-color fore-alt #e69875;
+
+@define-color red #e67e80;
+@define-color main #83c082;
+@define-color yellow #dbbc7f;
+@define-color main-dark #35a77c;
+@define-color gray #2e383c;
+
+@define-color back-t rgba(39, 46, 51, 0.6);
+@define-color back-alt-t rgba(30, 35, 44, 0.4);
+@define-color red-t rgba(230, 126, 128, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

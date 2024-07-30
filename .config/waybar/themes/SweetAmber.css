@@ -1,0 +1,31 @@
+/*
+*
+* ArcDark colorscheme
+*
+*/
+
+@define-color back #101013;
+@define-color back-alt #080809;
+@define-color fore #f4f5f6;
+
+@define-color color1 #e6133e;
+@define-color color2 #03e9b1;
+@define-color color3 #f9dc5c;
+@define-color color4 #338eff;
+@define-color color5 #c74ded;
+@define-color color6 #00e5ff;
+@define-color color7 #ff6a00;
+@define-color color8 #1b1c21;
+@define-color color9 #ce1138;
+@define-color color10 #71f79f;
+@define-color color11 #f9dc5c;
+@define-color color12 #0072ff;
+@define-color color13 #cb1ed1;
+@define-color color14 #20bdff;
+@define-color color15 #cc5500;
+@define-color color16 #c9cacb;
+
+
+/* transparent values */
+@define-color back-t rgba(16, 16, 19, 0.8);
+@define-color back-alt-t rgba(8, 8, 9, 0.8);

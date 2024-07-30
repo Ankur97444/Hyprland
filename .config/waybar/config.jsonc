@@ -1,0 +1,306 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 25,
+    "margin-top": 2,
+    "margin-left": 8,
+    "margin-right": 8,
+    "fixed-center": true,
+    "gtk-layer-shell": true,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/menu",
+        "clock",
+        //"idle_inhibitor",
+        "cpu",
+        "memory",
+        "disk",
+        "temperature",
+        //"hyprland/window"
+        "power-profiles-daemon"
+        // "wlr/taskbar"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        //"mpris",
+        "hyprland/window",
+        "network",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "backlight",
+        "battery",
+        "bluetooth",
+        "custom/notification",
+        "tray",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "0",
+            // "default": "∙",
+            // "empty": "∙",
+            // "active": "",
+            // "special": "",
+            // "urgent": ""
+        },
+
+        "persistent-workspaces": {
+            "*": 8
+        }
+    },
+
+    //"wlr/taskbar": {
+    //"format": "{icon}",
+    // "icon-size": 18,
+    // "icon-theme": "Papirus",
+    //"spacing": 0,
+    //"tooltip-format": "{title}",
+    //"on-click": "activate",
+    //"on-click-middle": "close",
+    //"ignore-list": [
+    //"Alacritty"
+    //],
+    //"app_ids-mapping": {
+    //"firefoxdeveloperedition": "firefox-developer-edition"
+    //}
+    //},
+
+    "tray": {
+        "spacing": 8
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "start-activated": true,
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "clock": {
+        "format": " {:%I:%M %p}",
+        "format-alt": "{:%R  %d·%m·%y}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "network": {
+        "tooltip": true,
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 {essid}",
+        // "format-wifi": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        // "format-ethernet": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+        "format-linked": "󰈀 {ifname} (No IP)",
+        "format-disconnected": " 󰖪 ",
+        "tooltip-format-disconnected": "Disconnected",
+        //"format-alt": "{essid}",
+        "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        "interval": 2,
+        "on-click-right": "~/.config/waybar/scripts/network.py"
+    },
+
+    "bluetooth": {
+        "format-disabled": "󰂯",
+        "format-off": "󰂲",
+        "format-on": "󰂯",
+        "format-connected": "󰂯 {num_connections}",
+        "format-connected-battery": "󰂀󰂯",
+        "on-click": "blueberry",
+        "on-click-right": "bluetoothctl power off",
+        "tooltip-format": "{controller_alias}\n{num_connections} connected",
+        "tooltip-format-connected": "connected {num_connections}\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t[ 󰥉 ]:{device_battery_percentage}%"
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "󰟜 {}%",
+        "tooltip": true,
+        "tooltip-format": "Memory - {used:0.1f}GB used",
+        "on-click": "gnome-system-monitor",
+        "on-click-right": "alacritty -e htop"
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%",
+        "on-click": "gnome-system-monitor"
+    },
+
+    "disk": {
+        "interval": 1,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/home",
+        "format-alt": "󰋊 {percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "Disk - {used} used out of {total} on {path} ({percentage_used}%)"
+    },
+
+    "temperature": {
+        "interval": 1,
+        "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+        "thermal-zone": 0,
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80,
+        "format-critical": " {temperatureC}°C",
+        "on-click": "gnome-system-monitor"
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon} Power-profile:{profile}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󱐋{icon} {capacity}%",
+        "format-plugged": "{icon}:{capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+        //"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Mute",
+        "format-bluetooth": "{icon}󰂯 {volume}%",
+        "format-bluetooth-muted": "{icon}󰂲 Mute",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "tooltip": true,
+        "tooltip-format": "{icon} at {volume}%"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Mute",
+        "tooltip": false,
+        //      "tooltip-format": " at {volume}%"
+    },
+
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "▶"
+        },
+        "interval": 1,
+        "max-length": 60
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "tooltip": false,
+        "format-icons": ["", "", "", "", ""],
+        //"format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
+        "min-length": 6
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{}{icon}",
+        "format-icons": {
+            "notification": "<span foreground='#F7768E'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='#F7768E'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='#F7768E'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='#F7768E'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "sleep 0.1 && swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true
+    },
+
+    "hyprland/window": {
+        "format": " : {class}",
+        "rewrite": {
+            "(.*) - Mozilla Firefox": "Mozilla Firefox",
+            "(.*) - vim": " $1",
+            "(.*) - zsh": " [$1]"
+        },
+        "seprate-outputs": true,
+        "max-length": 30
+    },
+
+    "custom/menu": {
+        "format": "",
+        "on-click": "killall rofi || ~/.config/hypr/scripts/launcher.sh",
+        "escape": true,
+        "tooltip-format": "Menu"
+    },
+
+
+    "custom/power": {
+        "format": "",
+        "tooltip-format": "PowerMenu",
+        "on-click": "killall rofi || ~/.config/hypr/scripts/powermenu.sh"
+    }
+
+}

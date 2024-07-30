@@ -1,0 +1,258 @@
+@import "/home/ankur/.config/waybar/themes/theme.css";
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 900;
+    min-height: 15px;
+}
+
+window#waybar {
+    border-radius: 0;
+    background: transparent;
+    color: @back-alt;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+tooltip {
+    background: @back-alt;
+    color: @fore;
+    border: 2px solid @fore;
+}
+
+#workspaces button:hover {
+    background: @back;
+    color: @fore;
+}
+
+
+/* for occupied workspaces */
+#workspaces button {
+    color: @back-alt;
+    background: @fore;
+    padding: 0 2px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+
+#workspaces button.visible {
+  color: @fore;
+  background: @back-alt;
+}
+
+/* for active workspaces */
+#workspaces button.active {
+    background-color: @color4;
+    color: @back-alt;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+#workspaces button.empty {
+    color: @back-alt;
+    background: @color8;
+}
+
+
+#workspaces button.urgent {
+    background-color: @color1;
+}
+
+#workspaces button.special {
+    color: @back;
+    background-color: @color2;
+}
+
+
+#clock,
+#battery,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#mpris,
+#taskbar,
+#idle_inhibitor,
+#scratchpad,
+#custom-menu,
+#custom-powerMenu,
+#mpd {
+    padding: 0 10px;
+    margin: 0px 4px;
+    border-radius: 20px;
+}
+
+
+#workspaces {
+    background: @back;
+    margin: 0px 5px;
+    border-radius: 20px;
+}
+
+#window {
+    margin: 0px 4px;
+    background: @fore;
+    padding: 0 8px;
+    border-radius: 20px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#cpu {
+    background: @color2;
+}
+
+#temperature {
+    background: @color1;
+}
+
+#temperature.critical {
+    background: @color9;
+}
+
+#memory {
+    background: @color3;
+}
+
+#pulseaudio {
+    background: @color7;
+}
+
+#pulseaudio.muted {
+    background: @color8;
+}
+
+#backlight {
+    background: @color5;
+}
+
+#battery {
+    background: @color4;
+}
+
+#battery.charging, #battery.plugged {
+    background: @color1;
+}
+
+@keyframes blink {
+    to {
+        background-color: @fore;
+        color: @back;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color9;
+    color: @back-alt;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*label:focus {
+    background-color: @color8;
+}*/
+
+#clock {
+    background: @color6;
+    color: @back-alt;
+    border: none;
+}
+
+
+#bluetooth {
+    padding-left: 5px;
+    background: @back;
+}
+
+#bluetooth.disabled, #bluetooth.off {
+    color: @color8;
+}
+
+#bluetooth.on {
+    color: @fore;
+}
+
+#bluetooth.connected {
+    color: @color6;
+}
+
+#tray {
+    background-color: @back;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: 4px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+# tray > .active {
+   -gtk-icon-effect: highlight;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    box-shadow: inset 0 -2px @color1;
+}
+
+#power-profiles-daemon {
+    background: @fore;
+}
+#power-profiles-daemon.balanced {
+    background: @back;
+    color: @fore;
+}
+#power-profiles-daemon.performance {
+    background: @color1;
+}
+#power-profiles-daemon.power-saver {
+    background: @color2;
+}
+
+/*
+*   CUSTOM MODULES  *
+*/
+
+/* Apps */
+#custom-menu {
+    color: @back-alt;
+    background: @color4;
+}
+
+/* Notification */
+#custom-notification {
+    color: @color3;
+    background: @back;
+    margin-right: 4px;
+    padding-right: 12px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* PowerMenu */
+#custom-powerMenu {
+    color: @back-alt;
+    background: @color4
+}
+

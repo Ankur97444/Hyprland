@@ -1,0 +1,18 @@
+/*
+*
+* Gruvbox-Dark theme
+*
+*/
+
+
+@define-color back #282828;
+@define-color back-alt #1d2021;
+@define-color fore #ebdbb2;
+
+@define-color selected #8ec07c;
+@define-color dark #928374;
+@define-color highlight #fb4934;
+
+
+/* Transparent Element */
+@define-color back-trans rgba(40, 40, 40, 0.6);

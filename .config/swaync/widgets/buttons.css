@@ -1,0 +1,20 @@
+@import "/home/ankur/.config/swaync/themes/theme.css";
+
+.widget-buttons-grid {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: @back;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: @back;
+  border-radius: 12px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  /* style given to the active toggle button */
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+}

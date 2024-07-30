@@ -1,0 +1,18 @@
+/*
+*
+* TokyoNight theme
+*
+*/
+
+
+@define-color back #1a1b26;
+@define-color back-alt #16161e;
+@define-color fore #c8d3f5;
+
+@define-color selected #7aa2f7;
+@define-color dark #545c7e;
+@define-color highlight #f7768e;
+
+
+/* Transparent Element */
+@define-color back-trans rgba(26, 27, 38, 0.6);

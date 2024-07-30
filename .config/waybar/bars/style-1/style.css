@@ -1,0 +1,270 @@
+@import url("themes/theme.css");
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Comic Shanns";
+    font-weight: 900;
+    font-size: 14px;
+    min-height: 15px;
+}
+
+window#waybar {
+    /*background-color: transparent;*/
+    background-color: @back-alt;
+    color: @back-alt;
+    border-bottom: 4px solid @back-alt;
+    border-top: 4px solid @back-alt;
+    border-radius: 0;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+tooltip {
+  opacity: 0.9;
+  font-size: 16px;
+  border-radius: 0px;
+  border: 2px solid @fore;
+}
+
+#workspaces button:hover {
+    background: @back;
+}
+
+
+/* for occupied workspaces */
+#workspaces button {
+    padding: 0 5px;
+    margin: 0px 1px;
+    background-color: @back;
+    color: @fore;
+    box-shadow: inset 0 -2px @color7;
+}
+
+#workspaces button.empty {
+  color: @back-alt;
+  background-color: @color8;
+  box-shadow: inset 0 -2px @color8;
+}
+
+#workspaces button.visible {
+  color: @back-alt;
+  background-color: @color7;
+}
+
+/* for active workspaces */
+#workspaces button.active {
+    background-color: @color6;
+    color: @back-alt;
+    border-radius: 0;
+    padding: 0 4px;
+    box-shadow: inset 0 -2px @color6;
+}
+
+#workspaces button.urgent {
+  color: @back-alt;
+  background-color: @color1;
+}
+
+/*#workspaces button.special {
+    color: @back-alt;
+    background-color: @color2;
+}*/
+
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#mpris,
+#idle_inhibitor,
+#scratchpad,
+#custom-menu,
+#custom-notification,
+#custom-powerMenu,
+#mpd {
+    padding: 0 5px;
+    margin: 0px 2px;
+    border-bottom: 4px solid @back-alt;
+    border-top: 4px solid @back-alt;
+}
+
+#workspaces {
+    margin: 0px 5px;
+    border-bottom: 4px solid @back-alt;
+    border-top: 4px solid @back-alt;
+}
+
+#window {
+  margin: 0px 5px;
+  background: @fore;
+  padding: 0 0.5em;
+  border-bottom: 4px solid @back-alt;
+  border-top: 4px solid @back-alt;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#cpu {
+    background-color: @color1;
+}
+
+#temperature {
+    background-color: @color2;
+}
+
+#temperature.critical {
+    background-color: @color9;
+}
+
+#memory {
+    background-color: @color3;
+}
+
+#pulseaudio {
+    background-color: @color4;
+}
+
+#pulseaudio.muted {
+    background-color: @color8;
+    color: @back;
+}
+
+#backlight {
+    background-color: @color5;
+}
+
+#battery {
+    background-color: @color6;
+    color: @back-alt;
+}
+
+# battery.icons {
+  font-size: 17px;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: @color1;
+}
+
+@keyframes blink {
+    to {
+        background-color: @fore;
+        color: @back-alt;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color9;
+    color: @back-alt;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*label:focus {
+    background-color: @color8;
+}*/
+
+#clock {
+    background-color: @color7;
+}
+
+
+#bluetooth {
+  margin-bottom: 3px;
+  margin-left: 4px;
+
+}
+
+#bluetooth.disabled, #bluetooth.off {
+  color: @color8;
+}
+
+#bluetooth.on {
+  color: @fore;
+}
+
+#bluetooth.connected {
+  color: @color5;
+}
+
+/*
+#network {
+    background-color: @color12;
+}
+
+#network.disconnected {
+    background-color: @color8;
+}
+*/
+#tray {
+   background: @black-alt;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+# tray > .active {
+  -gtk-icon-effect: highlight;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    box-shadow: inset 0 -2px @color1;
+}
+
+#mpris {
+  background-color: @color3;
+}
+#mpris.spotify {
+  background: @color14;
+}
+#mpris.paused {
+  background: @color8;
+}
+
+
+/*
+*   CUSTOM MODULES  *
+*/
+
+/* Apps */
+#custom-menu {
+  background: @color4;
+  padding: 0px 5px;
+  border-left: 4px solid @back-alt;
+}
+
+/* Notification */
+#custom-notification {
+  color: @color3;
+}
+
+/* PowerMenu */
+#custom-powerMenu {
+  background: @color4;
+  padding: 0px 5px;
+  border-right: 4px solid @back-alt;
+}

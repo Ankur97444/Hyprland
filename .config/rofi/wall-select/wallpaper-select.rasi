@@ -1,0 +1,150 @@
+/* config - Wallpaper select */
+
+/* ---- Configuration ---- */
+configuration {
+    modi:                        "drun";
+    font:                        "ComicShannsMono Nerd Font italic 12";
+    show-icons:                  true;
+	drun-display-format:         "{name}";
+    hover-select:                true;
+    me-select-entry:             "MouseSecondary";
+    me-accept-entry:             "MousePrimary";
+    window-format:               "{w} · {c} · {t}";
+	/*dpi:						 1;*/
+}
+
+/* ---- Load pywal colors ---- */
+@theme "~/.config/rofi/themes/theme.rasi"
+
+/* ---- Global Properties ---- */
+* {
+
+    back-alt:                    var(background-alt); // Buttons background
+    main:                        var(selected); // Button selected
+    gray:                        var(active); // Window activated
+    red:                         var(urgent); // When hovering the activated window (maybe more?)
+
+    text-selected:               var(background);
+    text-color:                  var(foreground);
+    border-color:                var(selected);
+
+    transp:                      var(back-alt-t);
+
+}
+
+
+/* ---- Window ---- */
+window {
+    // Default
+    enabled:                     true;
+    fullscreen:                  false;
+    transparency:                "real";
+    cursor:                      "default";
+    spacing:                     0px;
+    border:                      2px;
+    border-radius:               30px;
+    location:                    center;
+    anchor:                      center;
+
+    // Style Values
+    width:                       75%;
+    background-color:            @transp;
+}
+
+/* ---- Mainbox ---- */
+mainbox {
+    enabled:                     true;
+    children:                    [ "listview" ];
+    background-color:            transparent;
+}
+
+/* ---- List ---- */
+listview {
+    enabled:                     true;
+    columns:                     4;
+    lines:                       2;
+    padding:                     26px 36px;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    background-color:            transparent;
+    text-color:                  @text-color;
+    spacing:                     20px;
+
+    //  Adapt rofi theme
+    border:                      0px;
+
+}
+
+/* ---- Elements ---- */
+element {
+    enabled:                     true;
+    orientation:                 vertical;
+    expand:                      false;
+    spacing:                     0px;
+    padding:                     5px 10px;
+    border-radius:               26px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @text-color;
+}
+
+
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @text-color;
+}
+element normal.urgent {
+    background-color:            @red;
+    text-color:                  @text-color;
+}
+element normal.active {
+    background-color:            @gray;
+    text-color:                  @text-color;
+}
+
+element selected.normal {
+    background-color:            @main;
+    text-color:                  @text-selected;
+}
+
+
+// Adapt rofi theme
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.urgent {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.active {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+/* ---- Image Box ---- */
+element-icon {
+    size:                        30%;
+    cursor:                      inherit;
+    expand: false;
+    padding:                     0px;
+    background-color:            inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+// Adapt rofi theme
+element.alternate.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}

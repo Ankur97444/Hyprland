@@ -1,0 +1,16 @@
+style=/home/ankur/.config/wofi/style.css
+show=run
+width=90%
+height=20%
+columns=2
+always_parse_args=true
+show_all=false
+print_command=true
+layer=top
+insensitive=true
+prompt=
+hide_scroll=true
+location=0
+normal_window=false
+term=kitty
+allow_images=true

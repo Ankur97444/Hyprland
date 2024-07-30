@@ -1,0 +1,31 @@
+/*
+*
+* Arc colorscheme
+*
+*/
+
+@define-color back #343434;
+@define-color back-alt #272727;
+@define-color fore #fbfbfb;
+
+@define-color color1 #e92020;
+@define-color color2 #3eb34f;
+@define-color color3 #eea834;
+@define-color color4 #e95420;
+@define-color color5 #208fe9;
+@define-color color6 #e920a3;
+@define-color color7 #41c6c8;
+@define-color color8 #4d4d4d;
+@define-color color9 #742525;
+@define-color color10 #123d18;
+@define-color color11 #8c5e11;
+@define-color color12 #a6401c;
+@define-color color13 #255074;
+@define-color color14 #742558;
+@define-color color15 #326868;
+@define-color color16 #9c9c9c;
+
+
+/* transparent values */
+@define-color back-t rgba(52, 52, 52, 0.8);
+@define-color back-alt-t rgba(39, 39, 39, 0.8);

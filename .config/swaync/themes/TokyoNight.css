@@ -1,0 +1,41 @@
+/*
+*
+* TokyoNight Dark Theme
+*
+*/
+
+/*
+#282828;  rgb(40,40, 40)
+#1d2021; rgba(29, 32, 33)
+#ebdbb2; rgba(235, 219, 178)
+
+#665c54; rgb(102, 92, 84)
+#458588; rgb(69, 133, 136)
+
+#fb4934; rgb(251, 73, 52)
+#d79921; rgb(215, 153, 33)
+*/
+
+@define-color back #1a1b26;
+@define-color back-alt #16161e;
+
+@define-color fore #c8d3f5;
+@define-color fore-alt #2ac3de;
+
+@define-color red #f7768e;
+@define-color main #7aa2f7;
+@define-color yellow #bb9af7;
+@define-color main-dark #2ac3de;
+@define-color gray #545c7e;
+
+
+@define-color back-t rgba(26, 27, 38, 0.6);
+@define-color back-alt-t rgba(22, 22, 30, 0.4);
+@define-color red-t rgba(251, 73, 52, 0.5);
+
+
+/*
+* Mpris-album-art
+*/
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.30);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.70);

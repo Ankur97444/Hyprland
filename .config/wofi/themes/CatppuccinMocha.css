@@ -1,0 +1,17 @@
+/*
+*
+* Catppuccin Mocha Themes
+*
+*/
+
+@define-color back #1e1e2e;
+@define-color back-alt #11111b;
+@define-color fore #cdd6f4;
+
+@define-color selected #cba6f7;
+@define-color dark #45475a;
+@define-color highlight #f9e2af;
+
+
+/* Transparent Element */
+@define-color back-trans rgba(30, 30, 46, 0.6);

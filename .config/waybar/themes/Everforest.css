@@ -1,0 +1,33 @@
+/*
+*
+* Dracula colorscheme
+*
+*/
+
+/* #21222c*/
+
+@define-color back #272e33;
+@define-color back-alt #1e2326;
+@define-color fore #d3c6aa;
+
+@define-color color1 #e67e80;
+@define-color color2 #e69875;
+@define-color color3 #dbbc7f;
+@define-color color4 #83c083;
+@define-color color5 #7fbbb3;
+@define-color color6 #a7c080;
+@define-color color7 #d699b6;
+@define-color color8 #2e383c;
+
+@define-color color9 #f85552;
+@define-color color10 #f57d26;
+@define-color color11 #dfa000;
+@define-color color12 #35a77c;
+@define-color color13 #3a94c5;
+@define-color color14 #8da101;
+@define-color color15 #df69ba;
+@define-color color16 #a6b0a0;
+
+/* Transparent values */
+@define-color back-t rgba(39, 46, 51, 0.8);
+@define-color back-alt-t rgba(30, 35, 38, 0.8);

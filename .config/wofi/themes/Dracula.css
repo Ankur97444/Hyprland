@@ -1,0 +1,18 @@
+/*
+*
+* Dracula theme
+*
+*/
+
+
+@define-color back #21222c;
+@define-color back-alt #191a21;
+@define-color fore #f8f8f2;
+
+@define-color selected #bd93f9;
+@define-color dark #44475a;
+@define-color highlight #ff5555;
+
+
+/* TRansparent element */
+@define-color back-trans rgba(33, 34, 44, 0.7);

@@ -1,0 +1,26 @@
+@import "/home/ankur/.config/swaync/themes/theme.css";
+
+/* Title widget */
+.widget-title {
+    margin: 0.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: @main;
+}
+.widget-title > button {
+    font-size: initial;
+    color: @back-alt;
+    text-shadow: none;
+    background: @main;
+    border-radius: 10rem;
+    padding: 5px 10px 5px 10px;
+}
+.widget-title > button:hover {
+    background: @main-dark;
+    color: @back-alt;
+    border: 1px solid @main-dark;
+}
+
+

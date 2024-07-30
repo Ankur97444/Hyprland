@@ -1,0 +1,37 @@
+@import "/home/ankur/.config/swaync/themes/theme.css";
+/* Mpris widget */
+.widget-mpris {
+    margin: 0.5rem;
+    border-radius: 12px;
+}
+
+.widget-mpris-player {
+    padding: 12px;
+    background-color: @mpris-album-art-overlay;
+    margin: 0;
+    border: 2px solid @fore;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+button:hover {
+    background: @mpris-button-hover;
+}
+
+.widget-mpris-album-art {
+    border-radius: 12px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.widget-mpris-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+
