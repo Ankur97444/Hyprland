@@ -14,7 +14,7 @@ This is my [ Hyprland ](https://github.com/hyprwm/Hyprland.git) dot files which 
 - Applets & Menu - Rofi [ [wayland fork] ](https://github.com/lbonn/rofi.git)
 - Editor - [ Neovim ](https://github.com/neovim/neovim.git)
 - Terminal - [Foot](https://codeberg.org/dnkl/foot.git), [Kitty](https://github.com/kovidgoyal/kitty.git)
-- FileManager - [Pcmanfm-gtk3](https://github.com/kovidgoyal/kitty.git)
+- FileManager - [Pcmanfm-gtk3](https://archlinux.org/packages/extra/x86_64/pcmanfm-gtk3/)
 - Wallpaper-engine - [Swww](https://github.com/LGFae/swww.git)
 
 ## Themes
