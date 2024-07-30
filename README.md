@@ -17,7 +17,7 @@ This is my [ Hyprland ](https://github.com/hyprwm/Hyprland.git) dot files which 
 - FileManager - [Pcmanfm-gtk3](https://archlinux.org/packages/extra/x86_64/pcmanfm-gtk3/)
 - Wallpaper-engine - [Swww](https://github.com/LGFae/swww.git)
 - Ideal Daemon - [Hypridle](https://github.com/hyprwm/hypridle.git)
-- LockScreen - [Hyprlock](https://github.com/hyprwm/hyprlock.githttps://github.com/hyprwm/hyprlock.git)
+- LockScreen - [Hyprlock](https://github.com/hyprwm/hyprlock.git)
 
 ## Themes
 - **Dracula**
